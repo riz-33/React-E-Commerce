@@ -1,0 +1,27 @@
+.MuiAppBar-colorPrimary {
+    background-color: white !important;
+}
+
+.loginBtn:hover {
+    background-color: #e62e7d !important;
+    color: white !important;
+    border: 1px solid black !important;
+}
+
+.loginBtn {
+    border-color: #e62e7d !important;
+    /* border: 1px solid !important; */
+    /* background-color: #e62e7d !important; */
+    color: black !important;
+    border-radius: 20px !important;
+    padding: 1px 30px !important;
+    font-size: 16px !important;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cart {
+    color: #e62e7d !important;
+    /* margin-right: 20px !important; */
+    margin-inline: 10px !important;
+}
