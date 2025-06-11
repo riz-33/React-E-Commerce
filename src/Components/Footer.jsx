@@ -1,16 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
+import Applogo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <section className="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
+    <section
+      style={{ paddingTop: "6rem", paddingBottom: "2.5rem" }}
+      className="py-10 bg-gray-50 sm:pt-16 lg:pt-24"
+    >
+      <div
+        style={{
+          paddingRight: "2.5rem",
+          paddingLeft: "2.5rem",
+          maxWidth: "90rem",
+          margin: "auto",
+        }}
+        className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl"
+      >
+        <div
+          style={{ columnGap: "3rem" }}
+          className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12"
+        >
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-            <img
-              className="w-auto h-9"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
-              alt=""
-            />
+            <img className="w-auto h-30" src={Applogo} alt="" />
 
             <p className="text-base leading-relaxed text-gray-600 mt-7">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -227,10 +238,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="mt-16 mb-10 border-gray-200" />
+        <hr style={{marginTop:"4rem", marginBottom:"2.5rem"}} className="mt-16 mb-10 border-gray-200" />
 
         <p className="text-sm text-center text-gray-600">
-          © Copyright 2021, All Rights Reserved by Postcraft
+          © Copyright 2025, All Rights Reserved by ShopSmart
         </p>
       </div>
     </section>

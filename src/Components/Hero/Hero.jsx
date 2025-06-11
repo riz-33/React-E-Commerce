@@ -1,3 +1,4 @@
+import React from 'react'
 import { Carousel } from "antd";
 import { Button } from "antd";
 import Hero1 from "../../assets/hero1.jpeg";
