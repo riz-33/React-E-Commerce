@@ -16,6 +16,7 @@ import new6 from "../../assets/women16.jpg";
 import new7 from "../../assets/kid18.jpg";
 import new8 from "../../assets/women10.jpg";
 
+
 const newCollections = [
   {
     id: 1,
@@ -114,7 +115,7 @@ const NewCollections = React.forwardRef((props, ref) => {
         }}
       >
         {newCollections.map((product) => (
-          <Card
+          <Card className="card-media"
             key={product.id}
             sx={{
               maxWidth: 300,
@@ -126,8 +127,8 @@ const NewCollections = React.forwardRef((props, ref) => {
               },
             }}
           >
-            <CardActionArea onClick={() => navigate(`/product/${product.id}`)}>
-              <CardMedia
+            <CardActionArea  onClick={() => navigate(`/product/${product.id}`)}>
+              <CardMedia 
                 component="img"
                 height="350"
                 image={product.image}
